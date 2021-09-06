@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFD85F"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#FFD85F"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <TextView
+            android:id="@+id/title_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/good_bodies"
+            android:textAllCaps="false"
+            android:textColor="#795548"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/female_bodies"
+        android:gravity="center"
+        android:src="@drawable/body_pos_one"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="#FFD85F"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+        <TextView
+            android:id="@+id/title"
+            android:textSize="32sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/bmi_calculator"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="24sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Weight"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            android:minWidth="56dp"
+            android:minHeight="56dp"
+            android:padding="8dp"
+            android:textColor="#795548"
+            android:textColorHint="#455A64"
+            tools:ignore="TextContrastCheck" />
+
+        <RadioGroup
+            android:id="@+id/weightGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/pounds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbs"
+                android:textColor="#795548"
+                tools:ignore="TextContrastCheck" />
+
+            <RadioButton
+                android:id="@+id/kgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kilos"
+                android:textColor="#795548"
+                tools:ignore="TextContrastCheck" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="Height"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/height"
+            android:inputType="numberDecimal"
+            android:minWidth="56dp"
+            android:minHeight="56dp"
+            android:padding="8dp"
+            android:textColor="#795548"
+            android:textColorHint="#455A64"
+            tools:ignore="TextContrastCheck" />
+        <RadioGroup
+            android:id="@+id/heightGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/inch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inches"
+                android:textColor="#795548"
+                tools:ignore="TextContrastCheck" />
+
+            <RadioButton
+                android:id="@+id/cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cm"
+                android:textColor="#795548"
+                tools:ignore="TextContrastCheck" />
+        </RadioGroup>
+    </LinearLayout>
+    <Button
+        android:id="@+id/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calc" />
+
+</LinearLayout>

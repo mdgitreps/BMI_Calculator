@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">BMI Calculator</string>
+    <string name="good_bodies">all bodies are good bodies!</string>
+    <string name="female_bodies">female_bodies</string>
+    <string name="calc">Calculate</string>
+    <string name="bmi_calculator">BMI Calculator</string>
+    <string name="lbs">lbs</string>
+    <string name="inches">in.</string>
+    <string name="kilos">kg</string>
+    <string name="height">Enter Height: </string>
+    <string name="weight">Enter Weight: </string>
+    <string name="invalid_nums">Invalid Entry.</string>
+    <string name="bmi_result">Your BMI is: </string>
+    <string name="cm">cm.</string>
+    <string name="in">in.</string>
+    <string name="values">Enter a value: </string>
+</resources>
